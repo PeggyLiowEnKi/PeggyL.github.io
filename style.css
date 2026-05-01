@@ -439,3 +439,355 @@ section {
     border-radius: 6px;
     width: fit-content;
 }
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+#contact {
+    padding: 60px 20px 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #1c2a48; /* Dark Navy Blue */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* The Main Split Container */
+.contact-wrapper {
+    display: flex;
+    max-width: 1000px; /* Limits how wide the box gets */
+    margin: 0 auto;
+    background-color: #f4f5f7; /* Very light grey background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    text-align: left;
+    overflow: hidden; /* Keeps the image corners sharp if you add border-radius */
+}
+
+/* Left Image Column */
+.contact-image-col {
+    flex: 1; /* Takes up 50% of space */
+    display: flex;
+}
+
+.contact-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the space without stretching */
+    min-height: 400px; /* Ensures it doesn't collapse */
+}
+
+/* Right Text Column */
+.contact-details-col {
+    flex: 1; /* Takes up 50% of space */
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-header h3 {
+    font-size: 2rem;
+    color: #1c2a48; /* Dark Navy Blue */
+    margin: 0 0 5px 0;
+}
+
+.contact-title {
+    font-size: 0.95rem;
+    color: #6c757d;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+
+/* Contact Info Text */
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item strong {
+    font-size: 0.9rem;
+    color: #1c2a48;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+.info-item a {
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+    color: #0066cc;
+}
+
+/* Divider Line */
+.contact-divider {
+    border: 0;
+    height: 1px;
+    background-color: #d1d5db;
+    margin: 30px 0 20px 0;
+    width: 60%; /* Doesn't go all the way across, like the image */
+    margin-left: 0;
+}
+
+/* Social Icon */
+.linkedin-icon {
+    width: 22px;
+    height: 22px;
+    fill: #1c2a48; /* Dark Navy Blue */
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.linkedin-icon:hover {
+    fill: #0a66c2; /* LinkedIn Official Blue on hover */
+    transform: translateY(-2px);
+}
+
+/* --- Mobile Responsiveness --- */
+/* On smaller screens, stack the layout instead of side-by-side */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-image-col img {
+        min-height: 250px;
+    }
+
+    .contact-details-col {
+        padding: 40px 30px;
+    }
+}
+/* =========================================
+   CO-CURRICULAR ACTIVITIES TIMELINE
+   ========================================= */
+
+#activities {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+#activities h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #1c2a48; /* Dark Navy Blue */
+    margin-bottom: 70px;
+}
+
+/* The invisible box holding the timeline */
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* The central vertical line */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #e5e7eb; /* Very light grey line */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.5px; /* Keeps the 1px line perfectly centered */
+}
+
+/* Each individual block holding the text */
+.timeline-item {
+    padding: 0 50px; /* Space between text and the center line */
+    position: relative;
+    width: 50%;
+    box-sizing: border-box; /* Prevents padding from breaking the width */
+    margin-bottom: 40px;
+}
+
+/* The small navy blue dots on the center line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1c2a48; 
+    border-radius: 50%;
+    top: 6px; /* Aligns the dot with the year text */
+    z-index: 1; /* Keeps the dot on top of the line */
+}
+
+/* Pushes left items to the left side and aligns text right */
+.left {
+    left: 0;
+    text-align: right;
+}
+
+/* Pushes right items to the right side and aligns text left */
+.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Positions the dot on the right edge of left items */
+.left::after {
+    right: -5px; 
+}
+
+/* Positions the dot on the left edge of right items */
+.right::after {
+    left: -5px; 
+}
+
+/* Typography Styling */
+.timeline-date {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #1c2a48;
+    letter-spacing: 2px;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #4a5568; /* Slightly muted text for the description */
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* --- Mobile Responsiveness --- */
+/* For screens smaller than 768px (tablets and phones) */
+@media screen and (max-width: 768px) {
+    /* Move the vertical line to the far left side */
+    .timeline-container::after {
+        left: 20px;
+    }
+    
+    /* Make all items take up 100% width and align text left */
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px; /* Make room for the line on the left */
+        padding-right: 20px;
+        text-align: left;
+    }
+    
+    /* Push the 'right' items back to the left edge */
+    .right {
+        left: 0;
+    }
+    
+    /* Move all dots to sit perfectly on the new left-aligned line */
+    .left::after, .right::after {
+        left: 15px; 
+    }
+}
+/* =========================================
+   WORK EXPERIENCE SECTION
+   ========================================= */
+
+#experience {
+    padding: 80px 20px;
+    background-color: #ffffff; 
+}
+
+#experience h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #1c2a48; /* Dark Navy Blue */
+    margin-bottom: 50px;
+}
+
+.experience-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* The Experience Card styling */
+.experience-card {
+    background-color: #f8f9fa; /* Very light grey */
+    border-left: 5px solid #1c2a48; /* Navy blue accent line */
+    padding: 35px 40px;
+    border-radius: 0 10px 10px 0; /* Rounds the right corners only */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateX(5px); /* Slight slide right on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.exp-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #1c2a48;
+}
+
+/* Pill-shaped date tag */
+.exp-date {
+    font-weight: 600;
+    color: #0066cc;
+    background-color: rgba(0, 102, 204, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.exp-company {
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bullet points inside the card */
+.exp-details {
+    margin: 0;
+    padding-left: 20px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.exp-details li {
+    margin-bottom: 10px;
+}
+
+.exp-details li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .experience-card {
+        padding: 25px 20px;
+    }
+}
