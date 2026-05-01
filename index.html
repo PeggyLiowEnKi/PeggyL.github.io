@@ -3,59 +3,440 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Peggy Liow En Ki | Portfolio</title>
+    <!-- This links to your CSS file below -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <h1>Peggy Liow En Ki</h1>
-    <ul class="nav-links">
-        <li><a href="about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#awards">Honours & Awards</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#activities">Co-curricular</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1>Peggy Liow En Ki</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Honours & Awards</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#activities">Co-curricular</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is Peggy Liow En Ki, a final year undergraduate student studying in the field of Bachelor of Information Systems (Honours) (Data Analytics). I am experienced in academic projects involving AI, SAS, Microsoft Power BI, SQL, data visualization tools, and machine learning models using Python. Skilled in effective time management, collaboration and teamwork through volunteering activities, and team-based competitions. Currently seeking a Data Analyst internship from 19th January 2026 to 17th April 2026 ​and I am ready to apply analytical and problem-solving skills in a real-world business environment.</p>
-</section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
 
-<section id="education">
-    <h2>Education</h2>
-    <p>Your university details here</p>
-</section>
+        <div class="about-container">
+            <div class="about-card">
+                <!-- Left: Image -->
+                <div class="about-image">
+                    <!-- Note: Consider changing this to a relative path like "Asset/Images/photo.avif" for web hosting -->
+                    <img src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\WhatsApp Image 2025-10-18 at 13_edited_e.avif" alt="Peggy Photo">
+                </div>
 
-<section id="awards">
-    <h2>Honours & Awards</h2>
-</section>
+                <!-- Right: Info -->
+                <div class="about-info">
+                    <h3>Peggy Liow En Ki</h3>
+                    <p>Bachelor of Information Systems (Honours) (Data Analytics)</p>
+                    <p><strong>Phone:</strong> +6011-14101448</p>
+                    <p><strong>Email:</strong> peggyliowenki@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/peggy-liow-en-ki-9a70a2280/" target="_blank">
+                            linkedin.com/in/peggy-liow-en-ki
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-<section id="certifications">
-    <h2>Certifications</h2>
-</section>
+        <div class="about-description">
+            <h3 class="about-subtitle">Hi! I'm Peggy Liow.</h3>
+            <p>
+                Hello! My name is Peggy Liow En Ki, a final year undergraduate student studying in the field of Bachelor of Information Systems (Honours) (Data Analytics). I am experienced in academic projects involving AI, SAS, Microsoft Power BI, SQL, data visualization tools, and machine learning models using Python. 
+                Skilled in effective time management, collaboration and teamwork through volunteering activities, and team-based competitions. Currently seeking a Data Analyst internship from January 2026 to April 2026 and ready to apply analytical and problem-solving skills in a real-world business environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        
+        <div class="education-container">
+
+            <!-- LEFT: Timeline Grid -->
+            <div class="education-timeline">
+
+                <!-- Item 1 -->
+                <div class="edu-item">
+                    <img src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Sunway Logo">
+                    <div class="edu-text">
+                        <div class="edu-date">2023–2026</div>
+                        <div class="edu-content">
+                            <h3>Bachelor of Information Systems (Honours) (Data Analytics)</h3>
+                            <p>Sunway University</p>
+                            <p>Results: CGPA 3.70</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="edu-item">
+                    <img src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\山打根育源独立中学-校徽.jpg" class="edu-logo" alt="Yu Yuan Logo">
+                    <div class="edu-text">
+                        <div class="edu-date">2020–2022</div>
+                        <div class="edu-content">
+                            <h3>Unified Examination Certificate</h3>
+                            <p>Yu Yuan Secondary School</p>
+                            <p>Results: 2As, 6Bs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="edu-item">
+                    <img src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\山打根育源独立中学-校徽.jpg" class="edu-logo" alt="Yu Yuan Logo">
+                    <div class="edu-text">
+                        <div class="edu-date">2020–2021</div>
+                        <div class="edu-content">
+                            <h3>SPM (Science Stream)</h3>
+                            <p>Yu Yuan Secondary School</p>
+                            <p>Results: 7As, 3Bs</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Transcript -->
+            <div class="education-right">
+                <h3>Transcripts</h3>
+                <div class="transcript-viewer">
+                    <!-- Added an ID here so JavaScript can find it -->
+                    <iframe id="transcript-frame" src="Asset/Images/transcript.pdf" class="transcript-frame"></iframe>
+                    
+                    <!-- The Buttons -->
+                    <div class="transcript-controls">
+                        <button id="prev-btn" onclick="changeTranscript(-1)">Previous</button>
+                        <span id="page-indicator">1 / 3</span>
+                        <button id="next-btn" onclick="changeTranscript(1)">Next</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Closing education-container -->
+    </section>
+
+<!-- Honours & Awards Section -->
+    <section id="awards">
+        <h2>Honours & Awards</h2>
+        
+        <!-- Reusing the education-container class to keep the layout consistent -->
+        <div class="education-container">
+
+<!-- LEFT: Timeline Grid Wrapped for Scrolling -->
+            <div class="timeline-scroll-area">
+                <div class="education-timeline">
+
+                    <!-- Award Item 1 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">September 2025 </div>
+                            <div class="edu-content">
+                                <h3>Dean List Award</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Item 2 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">April 2025</div>
+                            <div class="edu-content">
+                                <h3>Dean's List Award</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Item 3 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">February 2025</div>
+                            <div class="edu-content">
+                                <h3>Dean's List Award</h3>                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Item 4 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">February 2025</div>
+                            <div class="edu-content">
+                                <h3>Top Team in Paradox of Theron</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Award Item 5 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">September 2024</div>
+                            <div class="edu-content">
+                                <h3>Dean's List Award</h3>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Award Item 6 -->
+                    <div class="edu-item">
+                        <img src="Asset/Images/ea-inst-logo-sunway-uni.png" class="edu-logo" alt="Award Logo">
+                        <div class="edu-text">
+                            <div class="edu-date">April 2024</div>
+                            <div class="edu-content">
+                                <h3>Dean's List Award</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- This closes the education-timeline -->
+            </div> <!-- ADD THIS MISSING TAG! This closes the timeline-scroll-area -->
+
+            <!-- RIGHT: Certificate Viewer -->
+            <div class="education-right">
+                <h3>Certificates</h3>
+                <div class="transcript-viewer">
+                    <!-- Notice these IDs start with "award-" so they don't clash with education -->
+                    <iframe id="award-frame" src="Asset/Images/award1.pdf" class="transcript-frame"></iframe>
+
+                    <div class="transcript-controls">
+                        <button id="award-prev-btn" onclick="changeAward(-1)">Previous</button>
+                        <span id="award-page-indicator">1 / 2</span>
+                        <button id="award-next-btn" onclick="changeAward(1)">Next</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Closing container -->
+    </section>
+    
+<!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        
+        <!-- Reusing the 50/50 split container -->
+        <div class="education-container">
+
+            <!-- LEFT: 5 Box Cards -->
+            <div class="cert-cards-column">
+                
+                <div class="cert-card">
+                    <h3>Huawei ICT Academy</h3>
+                    <p>HCIA-AI V4.0 Certification</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Google</h3>
+                    <p>Data Analytics Professional Certificate</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>MATLAB</h3>
+                    <p>Statistics Onramp, Machine Learning Onramp, Curve Fitting Onramp, Regression Methods with Machine Learning</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>Deloitte Australia</h3>
+                    <p>Data Analytics Job Simulation</p>
+                </div>
+                
+                <div class="cert-card">
+                    <h3>CCNA</h3>
+                    <p>Introduction to Networks</p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Certificate Viewer -->
+            <div class="education-right">
+                <h3>View Certificates</h3>
+                <div class="transcript-viewer">
+                    <!-- Notice these IDs start with "cert-" -->
+                    <iframe id="cert-frame" src="Asset/Images/cert1.pdf" class="transcript-frame"></iframe>
+                    
+                    <div class="transcript-controls">
+                        <button id="cert-prev-btn" onclick="changeCert(-1)">Previous</button>
+                        <span id="cert-page-indicator">1 / 5</span>
+                        <button id="cert-next-btn" onclick="changeCert(1)">Next</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-</section>
+        <h2>Skills</h2>
+        
+        <div class="skills-container">
+            
+            <div class="skill-card">
+                <h3>💻 Programming</h3>
+                <div class="skill-tags">
+                    <span>Structured Query Language (SQL)</span>
+                    <span>Python</span>
+                    <span>Amazon Web Services (AWS)</span>
+                </div>
+            </div>
 
-<section id="activities">
-    <h2>Co-curricular Activities</h2>
-</section>
+            <div class="skill-card">
+                <h3>📊 Tools</h3>
+                <div class="skill-tags">
+                    <span>Microsoft Power BI</span>
+                    <span>Tableau</span>
+                    <span>SAS Miner</span>
+                    <span>SAS Enterprise Guide</span>
+                    <span>Microsoft Office</span>
+                </div>
+            </div>
 
-<section id="projects">
-    <h2>Projects</h2>
-</section>
+            <div class="skill-card">
+                <h3>🎨 Media</h3>
+                <div class="skill-tags">
+                    <span>Canva</span>
+                    <span>Figma</span>
+                    <span>Wix</span>
+                </div>
+            </div>
 
-<section id="contact">
-    <h2>Contact</h2>
-</section>
+            <div class="skill-card">
+                <h3>🗣️ Languages</h3>
+                <ul class="language-list">
+                    <li>
+                        <strong>English</strong> 
+                        <span class="prof-level">Fluent</span>
+                    </li>
+                    <li>
+                        <strong>Mandarin Chinese</strong> 
+                        <span class="prof-level">Native</span>
+                    </li>
+                    <li>
+                        <strong>Cantonese</strong> 
+                        <span class="prof-level">Native</span>
+                    </li>
+                    <li>
+                        <strong>Malay</strong> 
+                        <span class="prof-level">Speaking, Reading & Writing</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>🤝 Soft Skills</h3>
+                <div class="skill-tags">
+                    <span>Time Management</span>
+                    <span>Collaboration</span>
+                    <span>Teamwork</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="activities">
+        <h2>Co-curricular Activities</h2>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+
+    <!-- JavaScript for Transcripts placed right before the closing body tag -->
+    <!-- JavaScript for Transcripts and Awards placed right before the closing body tag -->
+   <script>
+    // --- 1. EDUCATION TRANSCRIPTS SCRIPT ---
+    const transcripts = [
+        "Asset/Images/transcript.pdf",
+        "Asset/Images/09c6f9_85825ce63dc04aa18d9d462241501646.pdf", 
+        "Asset/Images/09c6f9_e9f26c7b61c24a979c395601b611374f.pdf"
+    ];
+    
+    let currentIndex = 0;
+
+    function changeTranscript(direction) {
+        currentIndex += direction;
+        
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex >= transcripts.length) currentIndex = transcripts.length - 1;
+
+        document.getElementById('transcript-frame').src = transcripts[currentIndex];
+        document.getElementById('page-indicator').innerText = (currentIndex + 1) + " / " + transcripts.length;
+        document.getElementById('prev-btn').disabled = (currentIndex === 0);
+        document.getElementById('next-btn').disabled = (currentIndex === transcripts.length - 1);
+    }
+
+    // --- 2. HONOURS & AWARDS SCRIPT ---
+    // Make sure you put the correct award PDF names here!
+    const awards = [
+        "Asset/Images/award1.pdf", // Update this with your real award file name
+        "Asset/Images/award2.pdf"  // Update this with your real award file name
+    ];
+    
+    let currentAwardIndex = 0;
+
+    function changeAward(direction) {
+        currentAwardIndex += direction;
+        
+        if (currentAwardIndex < 0) currentAwardIndex = 0;
+        if (currentAwardIndex >= awards.length) currentAwardIndex = awards.length - 1;
+
+        document.getElementById('award-frame').src = awards[currentAwardIndex];
+        document.getElementById('award-page-indicator').innerText = (currentAwardIndex + 1) + " / " + awards.length;
+        document.getElementById('award-prev-btn').disabled = (currentAwardIndex === 0);
+        document.getElementById('award-next-btn').disabled = (currentAwardIndex === awards.length - 1);
+    }
+
+    // --- 3. CERTIFICATIONS SCRIPT (This was missing!) ---
+    // Moved your certification files here and fixed the slashes
+    const certs = [
+        "Asset/Images/Huawai Certificate.pdf", 
+        "Asset/Images/GoogleDataAnalyticsProfessionalCertificatev2_Badge20251019-32-6caya5.pdf",
+        "Asset/Images/Doc1.pdf",
+        "Asset/Images/09c6f9_98a3c3f8e1014362b4f8fc11ae4580de~mv2.jpeg",
+        "Asset/Images/CCNAITNUpdated20250927-31-i82h4q.pdf"
+
+    ];
+
+    let currentCertIndex = 0;
+
+    function changeCert(direction) {
+        currentCertIndex += direction;
+        
+        if (currentCertIndex < 0) currentCertIndex = 0;
+        if (currentCertIndex >= certs.length) currentCertIndex = certs.length - 1;
+
+        document.getElementById('cert-frame').src = certs[currentCertIndex];
+        document.getElementById('cert-page-indicator').innerText = (currentCertIndex + 1) + " / " + certs.length;
+        document.getElementById('cert-prev-btn').disabled = (currentCertIndex === 0);
+        document.getElementById('cert-next-btn').disabled = (currentCertIndex === certs.length - 1);
+    }
+
+    // --- 4. INITIALIZE ALL ON PAGE LOAD ---
+    document.addEventListener("DOMContentLoaded", function() {
+        changeTranscript(0);
+        changeAward(0);
+        changeCert(0); // Initialize certifications too
+    });
+</script>
 
 </body>
 </html>
