@@ -833,3 +833,124 @@ section {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 102, 204, 0.3);
 }
+
+/* =========================================
+   PROJECTS PAGE STYLES
+   ========================================= */
+
+.projects-page {
+    background-color: #ffffff;
+}
+
+.projects-main {
+    /* Changed 120px to 40px to reduce the top gap */
+    padding: 40px 5% 80px 5%; 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #1c2a48;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1c2a48; /* Full width border under title */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Tabs Navigation */
+.project-tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Ensures the 6 group tabs wrap nicely on smaller screens */
+}
+
+/* Added .group-tab-link here */
+.tab-link, .group-tab-link {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+/* Added .group-tab-link:hover here */
+.tab-link:hover, .group-tab-link:hover {
+    color: #1c2a48;
+}
+
+/* Added .group-tab-link.active here */
+.tab-link.active, .group-tab-link.active {
+    color: #1c2a48;
+    border-bottom: 2px solid #1c2a48; /* Highlight active tab */
+    font-weight: 600;
+}
+/* Tab Content Layout (Split Screen) */
+.project-split-layout {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+/* Left Side: Text Info */
+.project-info {
+    flex: 0 0 35%; /* Takes up 35% of the width */
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    color: #1c2a48;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project-info p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a5568;
+    text-align: justify;
+}
+
+/* Right Side: PDF Viewer */
+.project-pdf {
+    flex: 1; /* Takes up remaining space */
+    background-color: #323639; /* Dark background like standard PDF viewers */
+    border-radius: 8px;
+    overflow: hidden;
+    height: 700px; /* Adjust height as needed */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-pdf iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Mobile Responsiveness for Projects Page --- */
+@media (max-width: 992px) {
+    .project-split-layout {
+        flex-direction: column;
+    }
+    
+    .project-info {
+        flex: none;
+        width: 100%;
+    }
+    
+    .project-pdf {
+        height: 500px; /* Shorter on mobile */
+    }
+    
+    .project-tabs {
+        flex-wrap: wrap; /* Allows tabs to wrap on small screens */
+        gap: 15px;
+    }
+}

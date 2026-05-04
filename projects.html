@@ -6,20 +6,199 @@
     <title>Projects | Peggy Liow En Ki</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="projects-page">
 
     <nav class="navbar">
         <h1>Peggy Liow En Ki</h1>
         <ul class="nav-links">
-            <li><a href="index.html">← Back to Portfolio</a></li>
+            <li><a href="index.html">← Back to Main Page</a></li>
         </ul>
     </nav>
 
-    <section id="projects-page-content" style="padding: 100px 20px; text-align: center;">
-        <h2>My Projects</h2>
-        <p>Detailed case studies coming soon!</p>
-        
+    <main class="projects-main">
+
+        <section class="project-category">
+            <h2 class="category-title">INDIVIDUAL PROJECTS</h2>
+            
+            <div class="project-tabs">
+                <button class="tab-link active" onclick="openProject(event, 'capstone')">Capstone Project</button>
+                <button class="tab-link" onclick="openProject(event, 'social-and-web-analytics')">Social and Web Analytics</button>
+                <button class="tab-link" onclick="openProject(event, 'programming-prinicples')">Programming Principles</button>
+            </div>
+
+            <div id="capstone" class="tab-content" style="display: flex;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>CAPSTONE PROJECT</h3>
+                        <p>
+                            This project studies the main factors that influence consumers' intention to use smart home security devices in urban areas of Malaysia. It aims to understand adoption behavior and provide insights for technology providers and policymakers to promote the use of smart home technologies for smarter living environments.
+                        </p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Capstone Project.pdf" title="Capstone Project PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="social-and-web-analytics" class="tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>SOCIAL AND WEB ANALYTICS</h3>
+                        <p>
+                            This project uses Python (NetworkX) to perform network analysis on house finch social interaction data, identifying key birds and connections that significantly influence the spread of the Mycoplasma gallisepticum disease.
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Social Web Analytics.pdf" title="Data Storage Project PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="programming-prinicples" class="tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>PROGRAMMING PRINCIPLES</h3>
+                        <p>This project is about developing a Python-based Classroom Management System designed to help teachers, students, and administrators manage student records, attendance, and grades efficiently. The system reads and processes student information from files, validates inputs, retrieves current date and time, and provides a user-friendly interface for classroom data management.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Programming Principles.pdf" title="Project 3 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
+
+        <section class="project-category" style="margin-top: 80px;">
+            <h2 class="category-title">GROUP PROJECTS</h2>
+            
+            <div class="project-tabs">
+                <button class="group-tab-link active" onclick="openGroupProject(event, 'MAS')">Malaysia Airlines Project</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'AI')">Artificial Intelligence</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'Advanced-BA')">Advanced Business Analytics</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'Enterprise-Architecture')">Enterprise Architecture</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'Data-Structure-Algorithms')">Data Structure and Algorithms</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'Statistics')">Statistics for Data Analytics</button>
+            </div>
+
+            <div id="MAS" class="group-tab-content" style="display: flex;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>MALAYSIA AIRLINES PROJECT</h3>
+                        <p>
+                            This project focuses on improving the Malaysia Airlines system, particularly the check-in process, live chat support and app login system. We developed a Figma prototype that introduces several enhancements, including a display of upcoming flights on the check-in page, integration of a 24-hour AI-powered live chatbot, and the addition of an extra verification method on the login page.
+                        </p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Malaysia Airlines System.pdf" title="Wildfire Project PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="AI" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>ARTIFICIAL INTELLIGENCE</h3>
+                        <p>This project focuses on implementing the A* search algorithm to collect all treasures using the most efficient path, minimizing both the total steps taken and total energy used, while avoiding all traps and obstacles. Players can utilize rewards to ease their journey.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Artificial Intelligence.pdf" title="Group Project 2 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Advanced-BA" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>ADVANCED BUSINESS ANALYTICS</h3>
+                        <p>This project focuses on developing predictive models and identifying the best-performing one among several machine learning algorithms, including K-Nearest Neighbours (KNN), Random Forest, Logistic Regression and XGBoost, using a financial fraud dataset. Power BI is also utilized to visualize data patterns related to financial fraud.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Advanced Business Analytics.pdf" title="Group Project 3 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Enterprise-Architecture" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>ENTERPRISE ARCHITECTURE</h3>
+                        <p>The project is about developing an enterprise architecture plan for Buyomart to support its expansion by upgrading its POS, inventory, delivery integration and sales tracking systems using modern cloud-based and AI-driven technologies.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\EA.pdf" title="Group Project 4 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Data-Structure-Algorithms" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>DATA STRUCTURE AND ALGORITHMS</h3>
+                        <p>The project is about developing interactive visualizations of Binary Search Tree, AVL Tree and B-Tree using Python to demonstrate how each data structure stores and manages data efficiently through insertion, deletion and balancing operations.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\DSA.pdf" title="Group Project 5 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Statistics" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>STATISTICS FOR DATA ANALYTICS</h3>
+                        <p>This project uses SAS Enterprise Guide to perform statistical modeling and predictive analysis on housing data, identifying key factors such as age，location, and amenities that significantly impact house prices.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Statistics.pdf" title="Group Project 6 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        // Function for Individual Projects Tabs
+        function openProject(evt, projectName) {
+            var i, tabcontent, tablinks;
+            
+            // Hide all individual project content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            // Remove 'active' class from all individual project tabs
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            // Show the selected tab and add 'active' class to the clicked button
+            document.getElementById(projectName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+
+        // Function for Group Projects Tabs
+        function openGroupProject(evt, projectName) {
+            var i, tabcontent, tablinks;
+            
+            // Hide all group project content
+            tabcontent = document.getElementsByClassName("group-tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            // Remove 'active' class from all group project tabs
+            tablinks = document.getElementsByClassName("group-tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            // Show the selected tab and add 'active' class to the clicked button
+            document.getElementById(projectName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
