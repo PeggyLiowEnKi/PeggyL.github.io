@@ -77,6 +77,9 @@
                 <button class="group-tab-link" onclick="openGroupProject(event, 'Enterprise-Architecture')">Enterprise Architecture</button>
                 <button class="group-tab-link" onclick="openGroupProject(event, 'Data-Structure-Algorithms')">Data Structure and Algorithms</button>
                 <button class="group-tab-link" onclick="openGroupProject(event, 'Statistics')">Statistics for Data Analytics</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'Business-Intelligence')">Business Intelligence Systems</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'DBMS')">Database Management Systems</button>
+                <button class="group-tab-link" onclick="openGroupProject(event, 'DMKD')">Data Mining and Knowledge Discovery </button>
             </div>
 
             <div id="MAS" class="group-tab-content" style="display: flex;">
@@ -153,6 +156,41 @@
                 </div>
             </div>
 
+            <div id="Business-Intelligence" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>BUSINESS INTELLIGENCE</h3>
+                        <p>This project focuses on predicting short-term retail sales to optimize inventory management and resource allocation. To achieve this, our team analyzed a four-year superstore dataset, handling missing values and mitigating extreme outliers through 99th-percentile winsorization using SAS Miner. We then developed, tuned, and compared Random Forest and Gradient Boosting predictive models using SAS Miner. By evaluating the models, we selected Gradient Boosting for its superior accuracy and conducted feature importance analysis, which revealed that specific product sub-categories—rather than geographic locations—are the primary drivers of sales. Ultimately, we translated these predictive findings into actionable, data-driven recommendations for targeted promotions and product-based business strategies.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Business Intelligence.pdf" title="Group Project 4 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="DBMS" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>DATABASE MANAGEMENT SYSTEMS</h3>
+                        <p>This project focuses on evaluating and optimizing database query performance and storage efficiency for large-scale retail transaction data. To achieve this, our team conducted a comparative experimental analysis of different indexing strategies—specifically B-Tree, Hash, and non-indexed tables—across both relational (MySQL) and NoSQL (MongoDB) environments. We systematically measured query latency and storage overhead across various retrieval patterns, including point lookups, range filtering, sorting, and aggregations, using SQL and MQL within MySQL Workbench and MongoDB Shell. By profiling these executions, we discovered that B-Tree indexing provided the most optimal balance, delivering consistently fast execution times while significantly minimizing storage overhead compared to Hash indexing. Ultimately, we translated these empirical findings into actionable database design recommendations that help retail businesses reduce query latency, improve operational effectiveness, and optimize cloud storage costs.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Database Assignment.pdf" title="Group Project 5 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="DMKD" class="group-tab-content" style="display: none;">
+                <div class="project-split-layout">
+                    <div class="project-info">
+                        <h3>DATA MINING AND KNOWLEDGE DISCOVERY</h3>
+                        <p>This project forecasts California wildfire risks to support early warning systems and disaster mitigation. Using SAS Enterprise Miner, we preprocessed over 128,000 meteorological records from 262 weather stations, handling data skewness, anomalies, and imbalanced target classes. We then built and evaluated complex Ensemble architectures against High-Performance (HP) Neural Networks. The HP Neural Network proved optimal, achieving 96.77% accuracy and superior recall by capturing non-linear relationships in key factors like solar radiation, soil temperature, and relative humidity. Ultimately, these findings provided actionable recommendations, enabling authorities to optimize UAV patrols, issue targeted red-flag warnings, and strategically pre-position firefighting resources in high-risk zones.</p>
+                    </div>
+                    <div class="project-pdf">
+                        <iframe src="C:\Users\User\Documents\GitHub\PeggyL.github.io\Asset\Images\Data Mining.pdf" title="Group Project 6 PDF"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
