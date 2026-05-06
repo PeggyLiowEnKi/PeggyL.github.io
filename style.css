@@ -956,3 +956,10 @@ section {
         gap: 15px;
     }
 }
+
+#skills h2,
+#activities h2,
+#experience h2 {
+    text-align: center;
+    margin: 50px;
+}
